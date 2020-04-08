@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+{"version":1,"listeners":{"remote-settings/monitor_changes":{"version":"\"1586213478627\"","sourceInfo":{"moduleURI":"resource://services-settings/remote-settings.js","symbolName":"remoteSettingsBroadcastHandler"}}}}
+=======
+{"version":1,"listeners":{"remote-settings/monitor_changes":{"version":"\"1586310078770\"","sourceInfo":{"moduleURI":"resource://services-settings/remote-settings.js","symbolName":"remoteSettingsBroadcastHandler"}}}}
+>>>>>>> 5853b4d... second

@@ -1,0 +1,25 @@
+1586237595655	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1586237649288	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398862 - NS_ERROR_NET_TIMEOUT
+1586237649288	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1586237649288	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1586237649289	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1586237649289	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1586238043371	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1586238044618	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1586238051177	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1586238195656	Sync.Service	DEBUG	User-Agent: Firefox/74.0 (Windows NT 10.0; Win64; x64) FxSync/1.76.0.20200309095159.desktop
+1586238195656	Sync.Service	INFO	Starting sync at 2020-04-07 13:43:15 in browser session 3BQHk7pzz3xw
+1586238195656	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1586238195660	Sync.Status	INFO	Resetting Status.
+1586238195660	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1586238195660	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1586238195660	FirefoxAccounts	DEBUG	getOAuthToken enter
+1586238195661	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1586238195661	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1586238195661	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1586238204254	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/collections failed: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1586238204254	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1586238204254	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1586238204254	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1586238204255	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1586238204260	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available

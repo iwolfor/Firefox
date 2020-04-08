@@ -1,0 +1,61 @@
+1586233470957	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1586233499014	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398862 - NS_ERROR_NET_TIMEOUT
+1586233499015	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1586233499015	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1586233499015	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1586233569192	Sync.Service	DEBUG	User-Agent: Firefox/74.0 (Windows NT 10.0; Win64; x64) FxSync/1.76.0.20200309095159.desktop
+1586233569192	Sync.Service	INFO	Starting sync at 2020-04-07 12:26:09 in browser session 4x4w0BgE8n1A
+1586233569192	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1586233569195	Sync.Status	INFO	Resetting Status.
+1586233569195	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1586233569196	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1586233569476	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/collections
+1586233569478	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/configuration
+1586233569478	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1586233570033	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/configuration
+1586233570033	Sync.Service	DEBUG	Fetching global metadata record
+1586233570033	Sync.Service	DEBUG	Weave Version: 1.76.0 Local Storage: 5 Remote Storage: 5
+1586233570033	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1586233570033	Sync.Service	INFO	Testing info/collections: {"tabs":1586232263.21,"prefs":1586230306.32,"meta":1586222164.71,"clients":1586231569.44,"forms":1586230313.03,"passwords":1586230306.92,"history":1586232263.6,"crypto":1586222155.33,"bookmarks":1586230311.51}
+1586233570033	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1586222155.33
+1586233570033	Sync.Synchronizer	DEBUG	Refreshing client list.
+1586233570034	Sync.Engine.Clients	INFO	0 outgoing items pre-reconciliation
+1586233570035	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1586233570036	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1586233570548	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/storage/clients?full=1&limit=1000
+1586233570551	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 2 reconciled.
+1586233570552	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1586233570553	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1586233570559	Sync.Synchronizer	INFO	Updating enabled engines: 2 clients.
+1586233570561	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1586233570562	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1586233570563	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1586233570565	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1586233570566	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1586233570567	Sync.Engine.Tabs	INFO	0 outgoing items pre-reconciliation
+1586233570568	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1586233570569	Sync.Engine.Bookmarks	DEBUG	Checking if server sync ID 34DXV3WjXK_o matches existing
+1586233570570	Sync.Engine.Bookmarks	INFO	0 outgoing items pre-reconciliation
+1586233570573	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1586233570573	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust
+1586233570577	Sync.Engine.Bookmarks.Mirror	DEBUG	Building local tree
+1586233570582	Sync.Engine.Bookmarks.Mirror	DEBUG	Building remote tree
+1586233570585	Sync.Engine.Bookmarks.Mirror	DEBUG	Building merged tree
+1586233570586	Sync.Engine.Bookmarks.Mirror	DEBUG	Applying merged tree
+1586233570586	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust took 12.986ms
+1586233570586	Sync.Engine.Bookmarks.Mirror	DEBUG	No changes detected in both mirror and Places
+1586233570588	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":0}
+1586233570589	Sync.Engine.Forms	INFO	0 outgoing items pre-reconciliation
+1586233570589	Sync.Engine.Forms	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1586233570590	Sync.Engine.History	DEBUG	Checking if server sync ID R9WSpZyboc4l matches existing
+1586233570591	Sync.Engine.History	INFO	0 outgoing items pre-reconciliation
+1586233570592	Sync.Engine.History	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1586233570592	Sync.Doctor	INFO	Skipping consultation: telemetry reporting is disabled
+1586233570592	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1586233570592	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1586233570593	Sync.Synchronizer	INFO	Sync completed at 2020-04-07 12:26:10 after 1.40 secs.
+1586233570594	Sync.Declined	DEBUG	Handling remote declined: []
+1586233570594	Sync.Declined	DEBUG	Handling local declined: []
+1586233570594	Sync.Declined	DEBUG	Declined changed? false
+1586233570595	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1586233570598	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)

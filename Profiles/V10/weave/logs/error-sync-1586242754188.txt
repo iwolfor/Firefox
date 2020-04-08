@@ -1,0 +1,62 @@
+1586242124374	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1586242724376	Sync.Service	DEBUG	User-Agent: Firefox/74.0 (Windows NT 10.0; Win64; x64) FxSync/1.76.0.20200309095159.desktop
+1586242724376	Sync.Service	INFO	Starting sync at 2020-04-07 14:58:44 in browser session 3BQHk7pzz3xw
+1586242724377	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1586242724380	Sync.Status	INFO	Resetting Status.
+1586242724380	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1586242724381	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1586242724381	FirefoxAccounts	DEBUG	getOAuthToken enter
+1586242724381	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1586242724381	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1586242724381	Sync.BrowserIDManager	INFO	Getting keys
+1586242724382	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1586242724382	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1586242724382	FirefoxAccounts	DEBUG	enter getAssertion()
+1586242724383	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1586242724383	FirefoxAccounts	DEBUG	getAssertionFromCert
+1586242724383	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1586242724383	Sync.BrowserIDManager	DEBUG	Getting a token
+1586242724383	Services.Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1586242724384	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1586242728243	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1586242739507	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 failed: 2152398919 - NS_ERROR_NET_INTERRUPT
+1586242739507	Sync.BrowserIDManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+getTokenFromBrowserIDAssertion@tokenserverclient.js:246:13
+1586242739507	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1586242739508	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1586242739508	Sync.BrowserIDManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+getTokenFromBrowserIDAssertion@tokenserverclient.js:246:13
+1586242739508	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1586242754181	Sync.Resource	DEBUG	GET fail 401 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/collections
+1586242754182	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/collections failed with status 401
+1586242754182	Sync.Service	INFO	Logging out
+1586242754182	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1586242754182	Sync.ErrorHandler	INFO	Got 401 response; resetting clusterURL.
+1586242754183	Sync.ErrorHandler	DEBUG	New mid-sync 401 failure. Making a note.
+1586242754183	Sync.ErrorHandler	INFO	Attempting to schedule another sync.
+1586242754183	Sync.Service	ERROR	Aborting sync: failed to get collections.
+1586242754183	Sync.Resource	WARN	Got exception parsing response body: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data(resource://services-sync/resource.js:229:21) JS Stack trace: _processResponse/<@resource.js:229:21
+get@XPCOMUtils.jsm:129:51
+format@Log.jsm:642:19
+formatText@Log.jsm:571:44
+format@Log.jsm:589:12
+append@Log.jsm:682:37
+append@logmanager.js:156:44
+log@Log.jsm:379:16
+error@Log.jsm:387:10
+observe@policies.js:933:19
+observe@observers.js:135:21
+notify@observers.js:87:18
+notify@util.js:204:19
+WrappedNotify@util.js:214:17
+1586242754183	Sync.Resource	DEBUG	Parse fail: Response body starts: Err: Invalid Authorization
+1586242754183	Sync.ErrorHandler	ERROR	Sync encountered an error: ({data:"Err: Invalid Authorization", url:"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/collections", status:401, success:false, headers:{'alt-svc':"clear", 'content-length':"26", 'content-type':"application/json", date:"Tue, 07 Apr 2020 06:58:59 GMT", server:"openresty/1.15.8.2", via:"1.1 google", 'x-firefox-spdy':"h2", 'x-weave-timestamp':"1586242739.05"}, get obj() {
+        if (!redefining) {
+          // Make sure we don't get into an infinite recursion loop if
+          // the getter lambda does something shady.
+          redefining = true;
+          return redefine(aObject, aName, aLambda.apply(aObject));
+        }
+      }})
+1586242754184	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1586242754188	Sync.Service	DEBUG	Exception calling anonymous function: {"data":"Err: Invalid Authorization","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/collections","status":401,"success":false,"headers":{"alt-svc":"clear","content-length":"26","content-type":"application/json","date":"Tue, 07 Apr 2020 06:58:59 GMT","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2","x-weave-timestamp":"1586242739.05"}}

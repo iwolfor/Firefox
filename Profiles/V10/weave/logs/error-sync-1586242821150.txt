@@ -1,0 +1,43 @@
+1586242754188	Sync.LogManager	DEBUG	Flushing file log
+1586242754189	Sync.Service	DEBUG	User-Agent: Firefox/74.0 (Windows NT 10.0; Win64; x64) FxSync/1.76.0.20200309095159.desktop
+1586242754189	Sync.Service	INFO	Starting sync at 2020-04-07 14:59:14 in browser session 3BQHk7pzz3xw
+1586242754189	Sync.Service	DEBUG	In sync: should login.
+1586242754189	Sync.Service	INFO	User logged in successfully - verifying login.
+1586242754189	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1586242754189	Sync.BrowserIDManager	DEBUG	unlockAndVerifyAuthState already has (or can fetch) sync keys
+1586242754189	Sync.Status	DEBUG	Status.login: error.login.reason.network => success.status_ok
+1586242754189	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1586242754189	Sync.Service	DEBUG	Fetching unlocked auth state returned success.status_ok
+1586242754190	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1586242754190	Sync.BrowserIDManager	INFO	Getting keys
+1586242754190	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1586242754190	FirefoxAccounts	DEBUG	enter getAssertion()
+1586242754190	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1586242754190	FirefoxAccounts	DEBUG	getAssertionFromCert
+1586242754195	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1586242754196	Sync.BrowserIDManager	DEBUG	Getting a token
+1586242754196	Services.Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1586242754196	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1586242754302	Sync.LogManager	DEBUG	Log cleanup threshold time: 1585378754302
+1586242754318	Sync.LogManager	DEBUG	Done deleting files.
+1586242754972	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 200
+1586242754972	Services.Common.TokenServerClient	DEBUG	Got token response: 200
+1586242754973	Services.Common.TokenServerClient	DEBUG	Successful token response
+1586242754973	Sync.Status	DEBUG	Status.login: success.status_ok => success.login
+1586242754973	Sync.Status	DEBUG	Status.service: error.login.failed => success.status_ok
+1586242754973	Sync.BrowserIDManager	DEBUG	_findCluster returning https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/
+1586242754973	Sync.BrowserIDManager	DEBUG	Cluster value = https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/
+1586242754973	Sync.BrowserIDManager	DEBUG	Setting cluster to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/
+1586242754973	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/
+1586242754973	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1586242754974	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1586242821148	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/collections failed: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1586242821148	Sync.Service	DEBUG	verifyLogin failed: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1586242821148	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1586242821148	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1586242821148	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1586242821149	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1586242821149	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1586242821150	Sync.Service	DEBUG	Exception calling WrappedLock: Error: Login failed: error.login.reason.network(resource://services-sync/service.js:1041:15) JS Stack trace: onNotify@service.js:1041:15
+1586242821150	Sync.Service	DEBUG	Not syncing: login returned false.
+1586242821150	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent

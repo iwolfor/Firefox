@@ -1,0 +1,23 @@
+1586238204261	Sync.LogManager	DEBUG	Flushing file log
+1586238204269	Sync.LogManager	DEBUG	Log cleanup threshold time: 1585374204269
+1586238204279	Sync.LogManager	DEBUG	Done deleting files.
+1586238238079	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398862 - NS_ERROR_NET_TIMEOUT
+1586238238080	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1586238804256	Sync.Service	DEBUG	User-Agent: Firefox/74.0 (Windows NT 10.0; Win64; x64) FxSync/1.76.0.20200309095159.desktop
+1586238804256	Sync.Service	INFO	Starting sync at 2020-04-07 13:53:24 in browser session 3BQHk7pzz3xw
+1586238804256	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1586238804259	Sync.Status	INFO	Resetting Status.
+1586238804259	Sync.Status	DEBUG	Status.service: error.sync.failed => success.status_ok
+1586238804260	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1586238804260	FirefoxAccounts	DEBUG	getOAuthToken enter
+1586238804261	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1586238804261	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1586238804261	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1586238805801	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/collections
+1586238805802	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/configuration
+1586238806209	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1586238827880	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142065464/info/configuration failed: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1586238827880	Sync.Service	WARN	Failed to fetch info/configuration: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1586238827880	Sync.ErrorHandler	ERROR	Sync encountered an error: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.js:95:13) JS Stack trace: sync@enginesync.js:95:13
+1586238827881	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1586238827884	Sync.Service	DEBUG	Exception calling anonymous function: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.js:95:13) JS Stack trace: sync@enginesync.js:95:13
