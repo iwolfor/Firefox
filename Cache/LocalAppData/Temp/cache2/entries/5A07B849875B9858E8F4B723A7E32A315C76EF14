@@ -1,0 +1,237 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## These messages are used as headings in the recommendation doorhanger
+
+cfr-doorhanger-extension-heading = 推荐扩展
+cfr-doorhanger-feature-heading = 推荐功能
+cfr-doorhanger-pintab-heading = 试试看：固定标签页
+
+##
+
+cfr-doorhanger-extension-sumo-link =
+    .tooltiptext = 为什么我会看到这个？
+cfr-doorhanger-extension-cancel-button = 暂时不要
+    .accesskey = N
+cfr-doorhanger-extension-ok-button = 立刻添加
+    .accesskey = A
+cfr-doorhanger-pintab-ok-button = 固定此标签页
+    .accesskey = P
+cfr-doorhanger-extension-manage-settings-button = 管理推荐设置
+    .accesskey = M
+cfr-doorhanger-extension-never-show-recommendation = 不再显示此推荐
+    .accesskey = S
+cfr-doorhanger-extension-learn-more-link = 详细了解
+# This string is used on a new line below the add-on name
+# Variables:
+#   $name (String) - Add-on author name
+cfr-doorhanger-extension-author = 由 { $name } 开发
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-extension-notification = 推荐
+cfr-doorhanger-extension-notification2 = 推荐
+    .tooltiptext = 推荐扩展
+    .a11y-announcement = 有推荐扩展可用
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = 推荐
+    .tooltiptext = 推荐功能
+    .a11y-announcement = 有推荐功能可用
+
+## Add-on statistics
+## These strings are used to display the total number of
+## users and rating for an add-on. They are shown next to each other.
+
+# Variables:
+#   $total (Number) - The rating of the add-on from 1 to 5
+cfr-doorhanger-extension-rating =
+    .tooltiptext =
+        { $total ->
+           *[other] { $total } 星
+        }
+# Variables:
+#   $total (Number) - The total number of users using the add-on
+cfr-doorhanger-extension-total-users =
+    { $total ->
+       *[other] { $total } 个用户
+    }
+cfr-doorhanger-pintab-description = 固定常用的网站，就算重启也能快捷打开。
+
+## These messages are steps on how to use the feature and are shown together.
+
+cfr-doorhanger-pintab-step1 = <b>右键点击</b>您想要固定的标签页。
+cfr-doorhanger-pintab-step2 = 在菜单中选择<b>固定标签页</b>。
+cfr-doorhanger-pintab-step3 = 若网站有新动向，固定的标签页上会出现蓝色小点。
+cfr-doorhanger-pintab-animation-pause = 暂停
+cfr-doorhanger-pintab-animation-resume = 恢复
+
+## Firefox Accounts Message
+
+cfr-doorhanger-bookmark-fxa-header = 把书签随身带着走
+cfr-doorhanger-bookmark-fxa-body = 找到好网站了！接下来也把该书签同步至移动设备吧。开始使用 { -fxaccount-brand-name }。
+cfr-doorhanger-bookmark-fxa-link-text = 立即同步书签...
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = 关闭按钮
+    .title = 关闭
+
+## Protections panel
+
+cfr-protections-panel-header = 浏览，不被跟踪
+cfr-protections-panel-body = 保护好自己的数据。{ -brand-short-name } 保护您免受众多常见跟踪器对您在线活动的窥视。
+cfr-protections-panel-link-text = 详细了解
+
+## What's New toolbar button and panel
+
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = 新功能
+cfr-whatsnew-button =
+    .label = 新版变化
+    .tooltiptext = 新版变化
+cfr-whatsnew-panel-header = 新版变化
+cfr-whatsnew-release-notes-link-text = 阅读发行说明
+cfr-whatsnew-fx70-title = { -brand-short-name } 为您的隐私而战
+cfr-whatsnew-fx70-body = 最新的更新增强了跟踪保护功能，并可比以往更容易地让为每个站点创建安全密码。
+cfr-whatsnew-tracking-protect-title = 保护自己远离跟踪器
+cfr-whatsnew-tracking-protect-body = { -brand-short-name } 拦截了许多会窥视您浏览活动的常见社交和跨网站型跟踪器。
+cfr-whatsnew-tracking-protect-link-text = 查看您的报告
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+       *[other] 跟踪器拦截数量
+    }
+cfr-whatsnew-tracking-blocked-subtitle = 自{ DATETIME($earliestDate, month: "long", year: "numeric") }起
+cfr-whatsnew-tracking-blocked-link-text = 查看报告
+cfr-whatsnew-lockwise-backup-title = 备份您的密码
+cfr-whatsnew-lockwise-backup-body = 立即生成安全密码，并可在您登录的任何设备访问。
+cfr-whatsnew-lockwise-backup-link-text = 开启备份
+cfr-whatsnew-lockwise-take-title = 随身携带密码
+cfr-whatsnew-lockwise-take-body = { -lockwise-brand-short-name } 移动端应用可让您安全地访问在所有设备中备份的密码。
+cfr-whatsnew-lockwise-take-link-text = 获取应用
+
+## Search Bar
+
+cfr-whatsnew-searchbar-title = 使用地址栏，输入寥寥，搜遍万千
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = 单击地址栏，即可快速访问最常用的网站。来自 { $searchEngineName } 与浏览历史的搜索结果，助您更快找到所需信息。
+cfr-whatsnew-searchbar-body-generic = 单击地址栏，即可快速访问最常用的网站。来自浏览历史的搜索结果，助您更快找到所需信息。
+cfr-whatsnew-searchbar-body-topsites = 现在只需选择地址栏，就会显示包含常用网站链接的下拉框。
+cfr-whatsnew-searchbar-icon-alt-text = 放大镜图标
+
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = 浏览网页的同时看视频
+cfr-whatsnew-pip-body = 画中画模式会将视频弹出到浮动窗口中，这样您就可以在浏览其他标签页时继续进行观看。
+cfr-whatsnew-pip-cta = 详细了解
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = 更少恼人的弹出窗口
+cfr-whatsnew-permission-prompt-body = 现在起，{ -brand-shorter-name } 可以自动阻止网站询问您是否可以发送弹出消息的请求。
+cfr-whatsnew-permission-prompt-cta = 详细了解
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+       *[other] 已拦截数字指纹跟踪程序
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } 会拦截许多偷偷收集设备信息和操作行为，以针对您投放定向广告的数字指纹跟踪程序。
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = 数字指纹跟踪程序
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } 可拦截偷偷收集设备信息和操作行为，以针对您投放定向广告的数字指纹跟踪程序。
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = 在手机上获取此书签
+cfr-doorhanger-sync-bookmarks-body = 将您的书签、密码、历史记录等数据，同步到登录了{ -brand-product-name }服务的所有设备。
+cfr-doorhanger-sync-bookmarks-ok-button = 开启{ -sync-brand-short-name }
+    .accesskey = T
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = 密码不怕再忘
+cfr-doorhanger-sync-logins-body = 安全地存储密码，并同步到您的所有设备。
+cfr-doorhanger-sync-logins-ok-button = 开启{ -sync-brand-short-name }
+    .accesskey = T
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = 通勤路上阅读这篇文章
+cfr-doorhanger-send-tab-recipe-header = 把这篇食谱带到厨房
+cfr-doorhanger-send-tab-body = 标签页发送功能可轻松把网页发到手机上打开，任何登录了{ -brand-product-name }服务的设备也都支持。
+cfr-doorhanger-send-tab-ok-button = 试试标签页发送功能
+    .accesskey = T
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = 安全地分享这份 PDF
+cfr-doorhanger-firefox-send-body = 端到端加密分享文件，链接到期即焚，确保您敏感文件的安全。
+cfr-doorhanger-firefox-send-ok-button = 试用 { -send-brand-name }
+    .accesskey = T
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = 看看有哪些保护
+    .accesskey = P
+cfr-doorhanger-socialtracking-close-button = 关闭
+    .accesskey = C
+cfr-doorhanger-socialtracking-dont-show-again = 不再显示此类消息
+    .accesskey = D
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } 正在防御社交网站对您的跟踪
+cfr-doorhanger-socialtracking-description = 隐私是公民的基本权利。现在起，{ -brand-short-name } 会拦截常见的社交媒体跟踪器，限制这些网站收集您的上网活动。
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } 正在拦截此页面上的数字指纹跟踪程序
+cfr-doorhanger-fingerprinters-description = 隐私是公民的基本权利。现在起 { -brand-short-name } 会拦截数字指纹跟踪程序，阻止其收集身边设备的唯一识别信息。
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } 正在拦截此页面上的加密货币挖矿程序
+cfr-doorhanger-cryptominers-description = 隐私是公民的基本权利。现在起 { -brand-short-name } 会拦截加密货币挖矿程序，不让其使用您的计算机算力来“挖”数字货币
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+       *[other] 自{ $date }起，{ -brand-short-name } 已拦截超过 <b>{ $blockedCount }</b> 个跟踪器！
+    }
+cfr-doorhanger-milestone-ok-button = 查看全部
+    .accesskey = S
+x8��W�      ^��N^��NA�
+6^�s
+       :https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/ms-language-packs/f94cfda6-4e90-407c-ad47-1934627d785b.ftl strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Length: 10302
+Last-Modified: Mon, 16 Mar 2020 13:40:52 GMT
+x-amz-version-id: a68SHJiOIaqlHxtWT80hKVQg3etLDTTo
+Accept-Ranges: bytes
+Server: AmazonS3
+Date: Tue, 07 Apr 2020 14:24:18 GMT
+ETag: "7ec3cc15e5c44af00abc0f96a574d749"
+X-Cache: Hit from cloudfront
+Via: 1.1 fa763bd4d7fde260f358b4b4d919622d.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: HKG54-C1
+X-Amz-Cf-Id: OvyV0YsyjodmO-L-JYtMscyxK1gIHVEPCzWzE5TNiBpLjWTK-dZF0Q==
+Age: 68808
+ original-response-headers Content-Type: application/octet-stream
+Content-Length: 10302
+Connection: keep-alive
+Last-Modified: Mon, 16 Mar 2020 13:40:52 GMT
+x-amz-version-id: a68SHJiOIaqlHxtWT80hKVQg3etLDTTo
+Accept-Ranges: bytes
+Server: AmazonS3
+Date: Tue, 07 Apr 2020 14:24:18 GMT
+ETag: "7ec3cc15e5c44af00abc0f96a574d749"
+X-Cache: Hit from cloudfront
+Via: 1.1 fa763bd4d7fde260f358b4b4d919622d.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: HKG54-C1
+X-Amz-Cf-Id: OvyV0YsyjodmO-L-JYtMscyxK1gIHVEPCzWzE5TNiBpLjWTK-dZF0Q==
+Age: 68808
+ ctid 1 net-response-time-onstart 571 net-response-time-onstop 571   (>
