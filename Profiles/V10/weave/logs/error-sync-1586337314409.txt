@@ -1,0 +1,65 @@
+1586337309328	Sync.LogManager	DEBUG	Flushing file log
+1586337309334	Sync.LogManager	DEBUG	Log cleanup threshold time: 1585473309334
+1586337309361	Sync.LogManager	DEBUG	Done deleting files.
+1586337311761	FirefoxAccounts	INFO	Polling device commands.
+1586337311761	Sync.Service	DEBUG	User-Agent: Firefox/75.0 (Windows NT 10.0; Win64; x64) FxSync/1.77.0.20200403170909.desktop
+1586337311761	Sync.Service	INFO	Starting sync at 2020-04-08 17:15:11 in browser session HQ49IQhDdmxV
+1586337311761	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1586337311763	Sync.Status	INFO	Resetting Status.
+1586337311763	Sync.Status	DEBUG	Status.service: error.sync.failed_partial => success.status_ok
+1586337311764	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1586337311765	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/device/commands?index=0
+1586337312046	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/device/commands?index=0 200
+1586337312046	Hawk	DEBUG	(Response) /account/device/commands?index=0: code: 200 - Status text: OK
+1586337312046	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -1046
+1586337313338	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142240863/info/collections
+1586337313338	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142240863/info/configuration
+1586337313339	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1586337313909	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142240863/info/configuration
+1586337313909	Sync.Service	DEBUG	Fetching global metadata record
+1586337313909	Sync.Service	DEBUG	Weave Version: 1.77.0 Local Storage: 5 Remote Storage: 5
+1586337313909	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1586337313909	Sync.Service	INFO	Testing info/collections: {"bookmarks":1586337163.29,"meta":1586337165.3,"passwords":1586337159.94,"tabs":1586337307.92,"crypto":1586337154.32,"prefs":1586337158.62,"forms":1586337164.35,"clients":1586337286.44}
+1586337313909	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1586337154.32
+1586337313909	Sync.Synchronizer	DEBUG	Refreshing client list.
+1586337313910	Sync.Engine.Clients	INFO	0 outgoing items pre-reconciliation
+1586337313910	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1586337313911	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1586337314371	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/142240863/storage/clients?full=1&limit=1000
+1586337314373	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1586337314373	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1586337314373	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1586337314377	Sync.Synchronizer	INFO	Updating enabled engines: 1 clients.
+1586337314378	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1586337314378	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1586337314379	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1586337314379	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1586337314380	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1586337314380	Sync.Engine.Tabs	INFO	0 outgoing items pre-reconciliation
+1586337314380	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1586337314381	Sync.Engine.Bookmarks	DEBUG	Checking if server sync ID WvFJ8PoJvmpW matches existing
+1586337314382	Sync.Engine.Bookmarks	INFO	0 outgoing items pre-reconciliation
+1586337314389	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1586337314389	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust
+1586337314391	Sync.Engine.Bookmarks.Mirror	DEBUG	Building local tree
+1586337314393	Sync.Engine.Bookmarks.Mirror	DEBUG	Building remote tree
+1586337314395	Sync.Engine.Bookmarks.Mirror	DEBUG	Building merged tree
+1586337314396	Sync.Engine.Bookmarks.Mirror	DEBUG	Applying merged tree
+1586337314396	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust took 6.865ms
+1586337314396	Sync.Engine.Bookmarks.Mirror	DEBUG	No changes detected in both mirror and Places
+1586337314397	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":0}
+1586337314397	Sync.Engine.Forms	INFO	0 outgoing items pre-reconciliation
+1586337314398	Sync.Engine.Forms	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1586337314398	Sync.Engine.History	DEBUG	Checking if server sync ID P9458be04Unw matches existing
+1586337314398	Sync.Engine.History	DEBUG	First sync, uploading all items
+1586337314400	Sync.Status	DEBUG	Status for engine history: error.engine.reason.unknown_fail
+1586337314401	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed_partial
+1586337314401	Sync.ErrorHandler	DEBUG	history failed: Error: Error(s) encountered during statement execution: database disk image is malformed(resource://gre/modules/Sqlite.jsm:887:25) JS Stack trace: handleCompletion@Sqlite.jsm:887:25
+1586337314403	Sync.Doctor	INFO	Skipping consultation: telemetry reporting is disabled
+1586337314404	Sync.Synchronizer	INFO	Sync completed at 2020-04-08 17:15:14 after 2.64 secs.
+1586337314405	Sync.Declined	DEBUG	Handling remote declined: ["addons"]
+1586337314405	Sync.Declined	DEBUG	Handling local declined: ["addons"]
+1586337314405	Sync.Declined	DEBUG	Declined changed? false
+1586337314405	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1586337314405	Sync.ErrorHandler	ERROR	Some engines did not sync correctly.
+1586337314406	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
